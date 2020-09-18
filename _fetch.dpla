@@ -1,0 +1,10 @@
+lang["DPLA"]
+Event[onCall["Fetch"]]:(
+  input=input[int["Server ID: "]]
+  if[input == 11429]:(
+    command_print["Server" + input + ", is not working at the moment."]
+  )
+  else:(
+    command_print["Server" + input + ", was not found"]
+  )
+)
